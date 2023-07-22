@@ -1,11 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AdditinalInfo from "./components/AdditinalInfo";
+import Demo from "./components/Demo";
+import Demotwo from "./components/Demotwo";
+import FirstView from "./components/FirstView";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <FirstView />}/>
+        <Route path="demo" element={ <Demo />}/>
+       
+        {/* <Demo/> */}
+        {/* <Demotwo/> */}
+     
+      </Routes>
+    </BrowserRouter>
   );
 }
 
